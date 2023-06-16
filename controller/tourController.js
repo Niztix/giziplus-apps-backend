@@ -71,11 +71,13 @@ const updateTour = async (req, res) => {
 
 const deleteTour = async (req, res) => {
   try {
-    await Tour.findByIdAndDelete(req.params.id);
-
+    const tour = await Tour.findByIdAndDelete(req.params.id);
+    
     res.status(202).json({
       status: "success",
-      data: null,
+      data: {
+        tour,
+      },
     });
   } catch (error) {
     res.status(400).json({
