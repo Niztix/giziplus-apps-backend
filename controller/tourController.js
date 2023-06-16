@@ -1,7 +1,7 @@
 const Tour = require("../model/tourModel");
 
 const getAllTours = async (req, res) => {
-  const tours = await Tour.find();
+  const tours = await Tour.find({});
 
   res.status(200).json({
     status: "success",
@@ -24,7 +24,7 @@ const getTour = async (req, res) => {
     });
   } catch (error) {
     res.status(400).json({
-      staus: "fail",
+      status: "fail",
       message: error,
     });
   }
@@ -42,7 +42,7 @@ const createTour = async (req, res) => {
     });
   } catch (error) {
     res.status(400).json({
-      staus: "fail",
+      status: "fail",
       message: error,
     });
   }
@@ -63,7 +63,7 @@ const updateTour = async (req, res) => {
     });
   } catch (error) {
     res.status(400).json({
-      staus: "fail",
+      status: "fail",
       message: error,
     });
   }
@@ -79,7 +79,7 @@ const deleteTour = async (req, res) => {
     });
   } catch (error) {
     res.status(400).json({
-      staus: "fail",
+      status: "fail",
       message: error,
     });
   }
