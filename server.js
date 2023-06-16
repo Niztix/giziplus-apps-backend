@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const app = require('./app');
 
-const DB = 'mongosh "mongodb://mongo:JyDrQNrSricZo1IBXMa2@containers-us-west-166.railway.app:7622"';
+const DB = 'mongodb://mongo:JyDrQNrSricZo1IBXMa2@containers-us-west-166.railway.app:7622';
 
 mongoose.set('strictQuery', true);
 
