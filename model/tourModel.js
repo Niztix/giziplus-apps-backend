@@ -1,8 +1,15 @@
 const mongoose = require('mongoose');
 
 const tourSchema = new mongoose.Schema({
-  name: String,
-  description: String,
+  name: {
+    type: String,
+    required: [true, 'Field ini harus diisi!'],
+    minLength: [4, 'Nama harus diisi minimal 4 karakter!']
+  },
+  description: {
+    type: String,
+    required: [true, 'Field ini harus'],
+  },
 });
 
 const Tour = mongoose.model('Tour', tourSchema);
