@@ -7,6 +7,6 @@ const app = express();
 
 app.use(bodyParser.json());
 
-app.use('/api', tourRoutes);
+app.use('/', tourRoutes);
 
 module.exports = app;

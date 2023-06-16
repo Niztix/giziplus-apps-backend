@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const app = require('./app');
 
-const DB = 'mongodb+srv://ilmicuy:nasel007@giziplus.ggtdyri.mongodb.net/giziplus?retryWrites=true&w=majority';
+const DB = 'mongodb://mongo:JyDrQNrSricZo1IBXMa2@containers-us-west-166.railway.app:7622';
 
 mongoose.set('strictQuery', true);
 
