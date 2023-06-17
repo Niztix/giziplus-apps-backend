@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const tourSchema = new mongoose.Schema({
   _id: {
-    type: Schema.Types.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     default: mongoose.Types.ObjectId
   },
   name: {
