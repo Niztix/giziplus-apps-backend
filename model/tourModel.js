@@ -9,7 +9,7 @@ const tourSchema = new mongoose.Schema({
   title: {
     type: String,
     required: [true, 'Field ini harus diisi!'],
-    minLength: [4, 'Title ini harus disini minimal 4 karakter']
+    minLength: [4, 'Title ini harus disini minimal 4 karakter'],
   },
   description: {
     type: String,
